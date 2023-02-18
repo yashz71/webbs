@@ -1,0 +1,55 @@
+.rendu{
+    color: green;
+}
+.nonrendu{
+    color: red;
+}
+.log{
+    display: flex;
+    align-self: flex-start;
+    margin: 1%;
+}
+
+
+.ajoutbtn{
+    display: flex;
+    align-self: flex-end;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contain{
+    display: flex;
+    
+    flex-basis: 40%;
+    align-items: flex-start;
+}
+.demo-table {
+  margin-top: 20px;
+    width: 100%;
+  }
+  
+  .mat-column-demo-rendu {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+  }
+  
+  .mat-column-demo-nom {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  
+  .mat-column-demo-dateDeRendu {
+    font-style: italic;
+  }
+  
+  .mat-column-demo-rendu {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
