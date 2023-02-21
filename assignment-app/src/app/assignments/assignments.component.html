@@ -1,7 +1,7 @@
 <main class="container" >
 <div class="ajoutbtn">
     <a routerLink="/add">
-<button class="ajoutbtn" mat-flat-button color="accent">Ajouter Assignment</button>
+<button class="ajoutbtn" mat-flat-button color="accent">Add Assignment</button>
 </a>
 </div>
 <div class="log">
@@ -10,9 +10,11 @@
 </button>
 </a>
 </div>
-<p>nb total d'assignment {{totalDocs}}</p>
-<p>nb total de page {{totalPages}}</p>
-<p> nbr d'assignment par page <input type="range" min="1" max="100" value="10" (change)="getAssignments()" [(ngModel)]="limit" >{{limit}}</p>
+<div class="ass">
+<p class="ass-p">nbr total d'assignment {{totalDocs}}</p>
+<p class="ass-p">nbr total de page {{totalPages}}</p>
+<p class="ass-p">  nbr d'assignment par page <input type="range" min="1" max="100" value="10" (change)="getAssignments()" [(ngModel)]="limit" >{{limit}}</p>
+</div>
 <div class="contain">
 <button class="log" mat-raised-button color="primary" [disabled]="page===1" (click)="premierePage()">premier</button>
 <mat-divider></mat-divider>
@@ -24,15 +26,15 @@
 <mat-divider></mat-divider>
 </div>
 <mat-list *ngFor="let assignment of assignments let i=index">
-    <nav><a routerLink="/assignment/{{assignment.id}}">
+    <nav><a  routerLink="/assignment/{{assignment.id}}">
     
-    <h3 mat-subheader>{{assignment.dateDeRendu | date}}</h3>
+    <h3 class="assigns-d" style="color: black;" >{{assignment.dateDeRendu | date}}</h3>
     <mat-list-item>
     
-   <p   appRendu  *ngIf="assignment.rendu ; else nonsoumis" > {{i}} - {{assignment.nom}} a rendre le {{assignment.dateDeRendu}}
+   <p   class="assigns" appRendu  *ngIf="assignment.rendu ; else nonsoumis" > {{i}} - {{assignment.nom}} a rendre le {{assignment.dateDeRendu}}
     soumis par l'eleve: {{assignment.rendu}}</p>
 
-    <ng-template   #nonsoumis>
+    <ng-template  class="assigns-n"  #nonsoumis>
         {{i}} - {{assignment.nom}} non rendu
     </ng-template>
 <mat-divider></mat-divider>

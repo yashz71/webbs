@@ -5,15 +5,18 @@
     color: red;
 }
 .log{
-    display: flex;
-    align-self: flex-start;
-    margin: 1%;
+  
+  text-decoration: none;
+  margin: 3px;
+  width: 100px;
 }
 
 
 .ajoutbtn{
     display: flex;
     align-self: flex-end;
+    text-decoration: none;
+    margin: 3px;
     
 }
 .container{
@@ -52,4 +55,36 @@
     width: 32px;
     text-align: center;
     font-weight: bold;
+  }
+  .ass{
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .ass-p{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    font-size: larger;
+  }
+  .assigns{
+    text-decoration: none;
+   
+    margin-left: 200px;
+    font-size: larger;
+  }
+  .assigns-d{
+    margin-left: 450px;
+    
+    font-size: x-large;
+  }
+  .assigns-n{
+    text-decoration: none;
+   
+    margin-left: 200px;
+    font-size: larger;
   }

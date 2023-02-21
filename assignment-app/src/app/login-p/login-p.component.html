@@ -1,10 +1,10 @@
-<div class="l">
+<div class="form">
     <mat-card class="lg">
         <mat-card-header >LOG IN</mat-card-header>
         <mat-card-content>
             <mat-form-field appearance="fill">
                 <mat-label>Input</mat-label>
-                <input matInput [(ngModel)]="name" name="nom">
+                <input class="login" matInput [(ngModel)]="name" name="nom">
               </mat-form-field>
               <mat-divider></mat-divider>
             <mat-form-field appearance="fill">
@@ -14,8 +14,6 @@
       <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
 </mat-form-field>
-<mat-checkbox color="accent" >admin</mat-checkbox>
-<mat-checkbox color="accent" >user</mat-checkbox>
 <button mat-raised-button (click)="onAcc()"  color="primary">ACCESS</button>
 
         </mat-card-content>

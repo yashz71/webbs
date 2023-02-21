@@ -27,6 +27,8 @@ import { LoginPComponent } from './login-p/login-p.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 const routes : Routes= [
   {path:'', component:AssignmentsComponent},
@@ -56,6 +58,7 @@ const routes : Routes= [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatToolbarModule,
     MatIconModule,    
     MatDividerModule,MatInputModule,
     MatFormFieldModule,FormsModule,
